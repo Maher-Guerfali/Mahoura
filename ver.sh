@@ -44,7 +44,7 @@ echo "-s  to save decrypted password in your local folder"
 fi
 
 case $action in
-    Lister*) lister ;;
+    Lister*) ./func.sh -l ;;
  Change*) read go
 sudo passwd $go;;
     Decrypter*) read go
